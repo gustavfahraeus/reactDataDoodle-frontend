@@ -1,0 +1,252 @@
+:root {
+  --timeColumn: min(125px, 33%);
+}
+
+* {
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  color: rgba(255,255,255,0.77);
+  font-family: Monospace;
+  /* border: 1px solid red; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 35px;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom: 3px solid black;
+  border-color: #1F1B24;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#categoryContainer {
+  height: auto;
+  width: 100%;
+}
+
+.ArtistContainer {
+  align-self: center;
+  justify-self: center;
+  max-height: 240px;
+  max-width: 240px;
+  text-align: center;
+}
+
+.artistImage {
+  max-height: 90px;
+  max-width: 90px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.6) 1.5px 1.5px;
+  user-select: none;
+}
+
+
+#currentCategory {
+  padding-top: 20px;
+  color: white;
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+
+#currentTimeInterval {
+  color: white;
+  font-size: 25px;
+  width: 258px;
+  margin: auto;
+  
+}
+
+.songPersonalRanking {
+  position: absolute;
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.songImage {
+  margin-left: 24px;
+  min-width: 52px;
+  min-height: 52px;
+  max-width: 52px;
+  max-height: 52px;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.songTitle {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 550;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.albumTitle {
+  font-size: 14px;
+  font-weight: 550;
+  margin-right: 7.5px;
+  margin-left: auto;
+  text-align: right;
+}
+
+#timeIntervalChanger {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 880px; 
+  margin: auto;
+  font-size: 20px;
+  border-bottom: 3px solid #1F1B24;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.changerDiv {
+  width: 33%;
+  text-align: center;
+  cursor: pointer;
+  user-selecT: none;
+}
+
+.focused {
+  width: 33%;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+}
+
+.changerDiv:hover {
+    background-color: #242424;
+    border-radius: 5px;
+}
+
+
+.headerElement {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+  height: 100%;
+  user-selecT: none;
+  border: 1px solid #1F1B24;
+  border-top: none;
+}
+
+.headerElement:hover {
+  background-color: #242424;
+}
+
+.homePage {
+  height: calc(100vh - 108px);
+  width: 100%;
+  background-color: #121212;
+}
+
+.someShit {
+  display: grid;
+  grid-template-columns: 1fr 1fr var(--timeColumn);
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 0px 5px;
+  overflow-wrap: break-word;
+  justify-content: center;
+}
+
+.recentlyPlayedCategory {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-image: initial;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+.recentlyPlayedData {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#topRecent {
+  margin-top: 32px;
+}
+
+
+.scrollToTheTop {
+  width: 79px;
+  height: 79px; 
+  background-color: #476C9B;
+  box-shadow: 0px 2px grey;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s linear, transform 0.3s ease-in-out;
+  user-select: none;
+}
+
+.scrollToTheTop:hover {
+  transform: scale(90%);
+}
+
+.scrollToTheTop:active {
+  transform: translate(4px,3px);
+}
+
+
+
+
+@media (min-width: 768px) {
+  /* .scrollToTheTop {
+    bottom: 6px;
+    left: 6px;
+    width: 33px;
+    height: 33px;
+    font-size: 33px;
+  } */
+
+  .scrollToTheTop {
+    left: calc(50vw - 350px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .scrollToTheTop {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    left: 30px;
+  }
+}
+
+ 

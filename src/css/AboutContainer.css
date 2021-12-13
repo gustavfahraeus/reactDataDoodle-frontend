@@ -1,0 +1,14 @@
+.AboutContainer {
+    padding-top: 20px;
+    height: 90vh;
+    width: 880px;
+    max-width: 95%;
+}
+
+.aboutHeader {  
+    font-size: 35px;
+}
+
+.aboutEnding {
+    font-size: 21px;
+}

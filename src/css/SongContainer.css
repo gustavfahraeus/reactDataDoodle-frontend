@@ -1,0 +1,23 @@
+/* Relating to the 'SongContainer' component. 🎵 */
+
+.SongContainer {
+  display: flex;
+  align-items: center;
+  max-width: 880px; 
+  width: 880px;
+  min-height: 78px; 
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+/* .SongContainer:hover {
+  background-color: #242424;
+} */
+
+@media (max-width: 900px) {
+    .SongContainer {
+        width: 96vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

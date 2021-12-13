@@ -1,0 +1,49 @@
+/* Mobile up yeah yeah */
+.dataContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+    grid-template-rows: repeat(15,185px);
+    justify-content: center;
+    padding-bottom: 35px;
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+    .artistImage {
+      max-height: 160px;
+      max-width: 160px;
+     }
+  
+     .dataContainer {
+      grid-template-rows: repeat(17,250px);
+    }
+  }
+
+
+
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    #topRecent {
+      margin-top: 4px;
+    }
+  
+    .recentlyPlayedData {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ .artistImage {
+  max-height: 240px;
+  max-width: 240px;
+ }
+
+ .dataContainer {
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 4px;
+  grid-template-rows: repeat(17,400px);
+}
+}

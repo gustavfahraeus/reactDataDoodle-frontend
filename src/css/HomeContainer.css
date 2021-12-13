@@ -1,0 +1,121 @@
+.HomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+}
+
+.HomeContainer button {
+    font-weight: 900;
+}
+
+/* .button1 {
+    margin-top: 30px;
+} */
+
+.buttonContainer {
+    margin-top: 15px;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 90vw;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+
+.smallButtonContainer {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+  /* Scale up the box */
+.button:hover {
+    transform: scale(1.03);
+    backface-visibility: hidden;
+    cursor: pointer;
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+  .button:hover::after {
+    opacity: 1;
+  }
+
+
+
+.make-it-fast:hover::after {
+    opacity: 1;
+}
+
+
+.button {
+    border-radius: 40px;
+    color: black;
+    font-size: 15px;
+    padding-bottom: 5px;
+    /* text-shadow: 0.5px 0.5px black; */
+    width: 450px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.20s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 450px;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+
+.button1 {
+    border: hidden;
+    box-shadow: 0px 0px 1px 1px #984447,0 0 4px 2px #984447;
+    background-color: #984447;
+}
+
+.button2 {
+    border: hidden;
+    box-shadow: 0px 0px 1px 1px #468C98,0 0 4px 2px #468C98;
+    background-color: #468C98;
+}
+
+
+.button3 {
+    border: hidden;
+    box-shadow: 0px 0px 1px 1px #476C9B,0 0 4px 2px #476C9B;
+    background-color: #476C9B;
+}
+
+.button4 {
+    border: hidden;
+    box-shadow: 0px 0px 1px 1px #ADD9F4,0 0 4px 2px #ADD9F4;
+    background-color: #ADD9F4;
+}
+
+.button5 {
+    border: hidden;
+    width: 150px !important;
+    height: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 1px 1px #484848,0 0 4px 2px #484848;
+    background-color: #484848;
+    color: white
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 80vw;
+    }
+}
